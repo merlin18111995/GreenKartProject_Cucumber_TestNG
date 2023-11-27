@@ -24,6 +24,7 @@ public class CheckoutPage_StepDef {
 		Assert.assertEquals(act_quantity, testContext.exp_prod_Quantity);
 		Assert.assertEquals(checkOutPage.applyButtonIsDisplayed(), true);
 		Assert.assertEquals(checkOutPage.placeOrderButtonIsDisplayed(), true);
+		System.out.println(checkOutPage.getProductName());
 
 		checkOutPage.click_placeOrderButton();
 	}
